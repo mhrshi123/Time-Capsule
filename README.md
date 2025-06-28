@@ -16,3 +16,12 @@
 | **(Optional) Email Notification** | Sends email when capsule unlocks          |
 | **Auth (Optional)**               | Login/register to manage private capsules |
 
+| Layer               | Tech                                 |
+| ------------------- | ------------------------------------ |
+| Frontend            | React + Tailwind                     |
+| Backend             | Node.js + Express                    |
+| Database            | PostgreSQL + Prisma                  |
+| Auth (optional)     | JWT or Clerk/Auth0                   |
+| Future unlock logic | Prisma date fields + condition check |
+
+
