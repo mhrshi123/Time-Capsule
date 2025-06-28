@@ -39,7 +39,7 @@ Whether it’s a future you, a birthday surprise, or just a locked diary entry, 
 
 ## Why I Built This
 
-Just thought it’d be cool to build something emotional but technical. A mix of UX, access control, and time-based logic—all in one.
+Just thought it’d be cool to build something emotional but technical. A mix of UX, access control, and time-based logic, all in one.
 
 ---
 
