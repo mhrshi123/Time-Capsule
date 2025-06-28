@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int       @id @default(autoincrement())
+  email    String    @unique
+  password String
+  capsules Capsule[]
+  createdAt DateTime @default(now())
+}
+
+model Capsule {
+  id         Int      @id @default(autoincrement())
+  title      String
+  message    String
+  unlockDate DateTime
+  email      String?  // Optional email
+  isPublic   Boolean  @default(false)
+  ownerId   Int?
+  owner     User? @relation(fields: [ownerId], references: [id])
+  notified   Boolean  @default(false) // Has email been sent?
+  slug       String   @unique @default(uuid())
+  createdAt  DateTime @default(now())
+}
